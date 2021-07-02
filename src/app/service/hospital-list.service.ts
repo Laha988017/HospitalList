@@ -15,4 +15,10 @@ url = "https://api.rootnet.in/covid19-in/hospitals/medical-colleges";
   getHospitalList(): Observable<any>{
     return this.http.get<any>(this.url);
   }
+  getContacts(): Observable<any>{
+    return this.http.get<any>("https://api.rootnet.in/covid19-in/contacts");
+  }
+  getBeds(): Observable<any>{
+    return this.http.get<any>("https://api.rootnet.in/covid19-in/hospitals/beds");
+  }
 }

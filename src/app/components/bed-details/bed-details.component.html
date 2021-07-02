@@ -1,0 +1,24 @@
+<div class="container mt-5" style="max-width: 550px;">
+  <div>
+    <div class="form-group">
+      <input type="text" class="form-control mb-4" placeholder="Search" [(ngModel)]="query" id="listSearch">
+    </div>
+  </div>
+  
+  <div class="row row-cols-1 g-2">
+    <div class="col" *ngFor="let hospitals of dataset | searchFilter: query">
+      <div class="card" style="background-color: lavender;">
+        <div class="card-body">
+          <h5 class="card-title">{{hospitals.state}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Total Beds - {{hospitals.totalBeds}}</h6>
+          <ul class="list-group">
+            <li class="list-group-item">Rural Hospitals - {{hospitals.ruralHospitals}}</li>
+            <li class="list-group-item">Number of Rural Beds - {{hospitals.ruralBeds}}</li>
+            <li class="list-group-item">Urban Hospitals - {{hospitals.urbanHospitals}}</li>
+            <li class="list-group-item">Number of Urban Beds - {{hospitals.urbanBeds}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

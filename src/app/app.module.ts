@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { HospitalListComponent } from './components/hospital-list/hospital-list.component';
 import { FormsModule } from '@angular/forms';
 import { SearchFilterPipe } from './search-filter.pipe';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { BedDetailsComponent } from './components/bed-details/bed-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HospitalListComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    ContactsComponent,
+    BedDetailsComponent
   ],
   imports: [
     BrowserModule,
