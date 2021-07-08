@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchFilterPipe } from './search-filter.pipe';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { BedDetailsComponent } from './components/bed-details/bed-details.component';
+import { DoctorListComponent } from './components/doctor-list/doctor-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BedDetailsComponent } from './components/bed-details/bed-details.compon
     HospitalListComponent,
     SearchFilterPipe,
     ContactsComponent,
-    BedDetailsComponent
+    BedDetailsComponent,
+    DoctorListComponent
   ],
   imports: [
     BrowserModule,
